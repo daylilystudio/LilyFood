@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>利利安西餐</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/all.js"></script>
+</head>
+<body>
+	
+<div class="wrap">
+
+<div class="menu_block">
+<div class="menu_frame">
+<img src="img/logo_w.png" alt="">
+<ul class="menu">
+		<li><a id="menu_special" href="#">特色</a></li>
+		<li><a id="menu_chef" href="#">主廚</a></li>
+		<li><a id="menu_map" href="#">地圖</a></li>
+		<li><a href="order.html">訂購</a></li>
+		<li><a href="login.html">登入</a></li>
+</ul>
+<button>三</button>
+</div>
+</div>
+
+<div class="header">
+	<div class="header_text">
+		<h3>氣氛優美的絕佳約會首選</h3>
+		<p>七夕絕對無法錯過的好滋味</p>
+		<p>❝ 利利經典餐 ❞</p>
+	</div>
+</div>
+<!-- 表頭結束 -->
+
+<div id="special" class="contain">
+	<div class="text_line"></div>
+	<ul class="special">
+		<li><img src="img/feature_1.png" alt="">
+			<p>台灣本土蔬菜</p>
+			<span>In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique. Nam vel iaculis mauris.</span>
+		</li>
+		<li><img src="img/feature_2.png" alt="">
+			<p>專業米其林廚師</p>
+			<span>Sed ullamcorper tellus erat, non ultrices sem tincidunt euismod. Fusce rhoncus porttitor velit, eu bibendum nibh aliquet vel. Fusce lorem leo, vehicula at nibh quis, facilisis accumsan turpis.</span>
+		</li>
+		<li><img src="img/feature_3.png" alt="">
+			<p>對於專業不能退讓</p>
+			<span>Fusce rhoncus porttitor velit, eu bibendum nibh aliquet vel. Fusce lorem leo, vehicula at nibh quis, facilisis accumsan turpis.</span>
+		</li>
+	</ul>
+</div>
+
+<div id="chef" class="chef_block">
+<div class="contain">
+	<img src="img/main_chef_brown.png" alt="">
+	<div class="chef">
+		<p>今日主廚：帕金森、梅在帕</p>
+		<p style="margin-bottom: 1rem;">Tody Chef: Plum in Shock</p>
+		<span>Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque orci lectus, consectetur vel posuere posuere, rutrum eu ipsum. Aliquam eget odio sed ligula iaculis consequat at eget orci. Mauris molestie sit amet metus mattis varius. Donec sit amet ligula eget nisi sodales egestas. Aliquam interdum dolor aliquet dolor sollicitudin fermentum. Donec congue lorem a molestie bibendum.</span>
+	</div>
+	<div style="clear: both;"> </div>
+</div>
+</div>
+
+<div class="customer_block">
+<div class="contain">
+	<h4>聽聽別人的感想</h4>
+	<ul class="customer">
+		<li><img src="img/avatar_1.png" alt="">
+			<div class="customer_text">
+				<p>高雄一口吃</p>
+				<span>自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。</span>
+				<blockquote> -- 產品經理</blockquote>
+			</div>
+		</li>
+		<li><img src="img/avatar_2.png" alt="">
+			<div class="customer_text">
+				<p>廟口小霸王</p>
+				<span>自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。</span>
+				<blockquote> -- 金身道士</blockquote>
+			</div>
+		</li>
+		<li><img src="img/avatar_3.png" alt="">
+			<div class="customer_text">
+				<p>春天也來了</p>
+				<span>自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。</span>
+				<blockquote> -- 美麗萬分</blockquote>	
+			</div>
+		</li>
+	</ul>
+</div>
+</div>
+
+<div id="map" class="contain map">
+<p>
+<span>我們的位置不太夠坐</span>
+<span>要不要先訂位呢？</span>
+</p>
+<div class="map_frame">
+	<img src="img/Map.png" alt="">
+	<div class="reserve">
+		<form action="index.html">	
+		<ul>
+			<li><label for="name">姓名</label>
+			<input class="reserve_input" type="name" id="name" />
+			<li><label for="telephone">電話</label>
+			<input class="reserve_input" type="tel" id="telephone" />
+			<li><label for="email">信箱</label>
+			<input class="reserve_input" type="email" id="email" />
+			<li><label for="people">人數</label>
+			<input class="reserve_input" type="number" id="people" />
+			<li><label for="">是否素食</label> | 
+			<label for="veg_yes">是</label><input type="radio" id="veg_yes" name="food" /> 
+			<label for="veg_no">否</label><input type="radio" id="veg_no" name="food" /></li>
+		</ul>
+		<div>
+			<input class="reserve_submit" type="reset" value="清除">
+			<input class="reserve_submit" type="submit" value="送出">
+		</div>
+		</form>
+	</div>
+</div>
+</div>
+
+<footer>
+	<div class="contain footer_frame">
+	<div class="footer_box">
+		<p>關於 利利安西餐</p>
+		<span class="footer_text">Curabitur lobortis id lorem id bibndum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at.</span>
+	</div>
+	<div class="footer_box">
+		<p>聯絡方式</p>	
+		<ul>
+			<li>• 台北市中山北路到底</li>
+			<li>• +886 886 886</li>
+			<li>• service@email.com</li>
+		</ul>
+	</div>
+	<div class="social">
+		<img src="img/logo_l.png" alt="">
+		<ul>
+			<li>FB</li>
+			<li>IG</li>
+			<li>LINE</li>
+		</ul>
+	</div>
+	</div>
+</footer>
+
+<div class="top">TOP</div>
+
+</div><!-- wrap -->
+
+</body>
+</html>

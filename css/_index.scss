@@ -1,0 +1,193 @@
+//特色
+.text_line{
+	max-width: 500px;
+	width: 85%;
+	height: 1px;
+	background-color: #979797;
+	margin: 4rem auto 3.5rem auto;
+	position: relative;
+	text-align: center;
+}
+.text_line::after{
+	content: "客人總是在詢問";
+	position: absolute;
+	top: -2rem;
+	padding: .5rem 1rem;
+	transform: translateX(-50%);
+	background-color: #fff;
+	color:$normalcolor;
+	font-size: 1.3rem;
+	white-space: nowrap;
+}
+.text_line::before{
+	content: "這麼好吃的秘訣是什麼";
+	position: absolute;
+	top: 0rem;
+	padding: .5rem 1rem;
+	transform: translateX(-50%);
+	background-color: #fff;
+	color:$normalcolor;
+	font-size: 1.3rem;
+	white-space: nowrap;
+}
+.special{
+	@include flexcenter
+	align-items: flex-start;
+	li{
+		width: 33.33333%;
+		@include flexcenter
+		flex-direction: column;
+		line-height: 1.5;
+		color: $normalcolor;
+		margin-bottom: 1.5rem;
+		p{
+			padding-top: 1rem;
+			margin-bottom: -1rem;
+			font-size: 1.1rem;
+		}
+		span{
+			padding: 2rem;
+		}
+
+	}
+	@include padbelow{
+		align-items: center;
+		flex-direction: column;
+		li{
+			width: 85%;
+			span{
+				padding: 1.5rem 0 0 0;
+			}
+		}
+	}
+}
+
+
+
+//主廚介紹
+.chef_block{
+	background-color: $normalcolor;
+	width: 100%;
+	img{
+		float: left;
+		width: 50%;
+		@include padbelow{
+			width: 100%;
+		}
+	}
+	.chef{
+		float: left;
+		width: 50%;
+		color: #fff;
+		padding: 4rem;
+		line-height: 1.4;
+		@include padbelow{
+			width: 100%;
+		}
+		p{
+			font-size: 1.2rem;
+		}
+	}
+}
+
+
+//顧客感想
+.customer_block{
+	background-color: $lightgray;
+	color: $normalcolor;
+	h4{
+		font-size: 1.5rem;
+		text-align: center;
+		padding:2.5rem 0 1.5rem 0; 
+	}
+	.customer{
+		width: 95%;
+		margin: 0 auto;
+		padding-bottom:2rem; 
+		@include flexcenter
+		@include padbelow{
+			flex-direction: column;
+		}
+		li{
+			margin: 1rem auto;
+			padding: .5rem;
+			@include flexcenter
+			align-items: flex-start;
+			.customer_text{
+				line-height: 1.5;
+				padding-left: .5rem;
+				p{
+					font-size: 1.2rem;
+					margin: 1rem 0;
+				}
+				blockquote{
+					text-align: right;
+					font-style: italic;
+				}
+			}
+		}
+
+	}
+}
+
+
+//地圖
+.map{
+	color: $normalcolor;
+	p{
+	font-size: 1.5rem;
+	text-align: center;
+	padding:2.5rem 0 2rem 0;
+	}
+	span{
+		display: block;
+		line-height: 1.2;
+	}
+	.map_frame{
+		padding:0 1rem 4rem 1rem; 
+		@include flexcenter
+		@include padbelow{
+			flex-direction: column;
+		}
+		img{
+			width: 48%;
+			height: auto;
+			@include padbelow{
+				width: 85%;
+			}
+		}
+		.reserve{
+			width: 52%;
+			padding-left: 1rem;
+			@include padbelow{
+				width: 85%;
+				padding-left: 0rem;
+			}
+			ul li{
+				padding: .5rem 0;
+				.reserve_input{
+					width: 100%;
+					margin: .5rem 0;
+					padding: 5px;
+					border-radius: 5px;
+					border:1px solid #CCC;
+				}
+			}
+			div{
+				text-align: right;
+				.reserve_submit{
+					margin: .5rem 0 0 .5rem;
+					padding: .5rem 1.5rem;
+					border-radius: 5px;
+					border:0;
+					background-color: rgba(0,0,0,0.35);
+					color: #fff;
+					font-size: 1rem;
+				}
+				.reserve_submit:hover{
+					background-color: $hovercolor;
+				}
+			}
+		}
+	}
+}
